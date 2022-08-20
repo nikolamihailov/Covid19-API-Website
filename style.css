@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url("./images/covid19-min.jpg") no-repeat center center/cover;
+    color: #fff;
+    font-family: 'Muli', sans-serif;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    background: linear-gradient(black, gray);
+    border-radius: 30px;
+    padding: 40px;
+
+}
+
+.container h1 {
+    color: white;
+    font-size: 40px;
+    margin-top: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.container h2 {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.container h3 {
+    color: white;
+    font-weight: bold;
+
+}
+
+.container input {
+    background-color: whitesmoke;
+    font-size: 18px;
+    border: 0;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+
+}
+
+.container .btn {
+    background: linear-gradient(to bottom, red, black);
+    text-transform: uppercase;
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.container .btn:active {
+    transform: scale(0.95);
+}
+
+.container p {
+    font-size: 23px;
+}
+
+#totalCases {
+    font-weight: bold;
+}
+
+#totalDeaths {
+    color: red;
+    font-weight: bold;
+
+}
+
+#totalRecovered {
+    color: rgb(0, 251, 0);
+    font-weight: bold;
+}
+
+@media (max-width:750px) {
+    .container {
+        text-align: center;
+        width: 70%;
+        padding: 20px;
+    }
+
+    .btn {
+        margin-left: 0;
+        margin: 20px 0px 10px 0px;
+        display: inline-block;
+    }
+
+    .container h1 {
+        font-size: 30px;
+    }
+
+    .container input {
+        margin-right: 0;
+    }
+
+    .container h2 {
+        font-size: 25px;
+    }
+
+    .container p {
+        font-size: 21px;
+    }
+}
